@@ -1,5 +1,7 @@
 # Apenas Um Readme Qualquer
 
+Tudo escrito na unha. :grinning:
+
 ### Tópicos 
 
 - [Apache Kafka](#apache-kafka)
