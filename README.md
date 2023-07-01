@@ -109,6 +109,21 @@ Tipos de relacionamentos Customer-Supplier Development:
 
 ## Diferença entre interface e classe abstrata no Java
 
+Interfaces:
+- Só pode ter métodos abstratos.
+- Definem apenas a assinatura dos métodos que as classes devem implementar.
+- Uma classe pode implementar várias interfaces, herdando o comportamento.
+- Não pode ter construtores.
+- É um contrato que define os métodos que uma classe deve implementar, não pode ser instanciada.
+- Necessária quando é pra definir um contrato comum a um grupo de classes não necessariamente relacionadas, permitindo que compartilhem de comportamentos independentemente de sua hierarquia.
+
+Classes Abstratas:
+- Pode ter métodos abstratos(sem implementação) e métodos concretos.
+- Pode ser estendida por uma ou várias classes.
+- Pode ter construtores.
+- Pode ser instanciada.
+- Necessária quando é pra fornecer uam implementação padrão para um conjunto de classes relacionadas e que também deseja permitir que essas classes personalizem partes específicas do comportamento.
+
 ## Arquitetura Hexagonal
 
 ## Spring Security
