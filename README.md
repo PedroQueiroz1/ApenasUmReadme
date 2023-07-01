@@ -14,6 +14,7 @@ Tudo escrito na unha. :grinning:
 - [Arquitetura Hexagonal](#arquitetura-hexagonal)
 - [Spring Security](#spring-security)
 - [Ferramentas de pagamento](#ferramentas-de-pagamento)
+- [Tipos de atribuições de valores](#tipos-de-atribuicoes-valores)
 
 ## Apache Kafka v0.2
 
@@ -134,3 +135,10 @@ Classes Abstratas:
 Ferramentas para trabalhar com integração de pagamento: <br>
 Internacional: Stripe <br>
 Nacional: PagSeguro / Pagar.me <br>
+
+## Tipos de atribuições de valores
+
+1. Atribuição por valor - Quando o valor real da variável é copiado e atribuído a outra variável ou passado como argumento para uma função. Variáveis com cópia independente de seus valores. <br>
+2. Atribuição por referência - Quando um ponteiro ou referência para a memória em que o valor está armazenado é copiado. Duas variáveis referenciando um mesmo objeto na memória e, portanto, qualquer alteração em uma variável afetará a outra. <br>
+
+Agora em relação ao Java...
