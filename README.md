@@ -4,7 +4,7 @@ Tudo escrito na unha. :grinning:
 
 ### Tópicos 
 
-- [Apache Kafka](#apache-kafka-v01)
+- [Apache Kafka](#apache-kafka-v02)
 - [DDD](#ddd-v02)
 - [TDD](#tdd)
 - [BDD](#bdd)
@@ -14,7 +14,7 @@ Tudo escrito na unha. :grinning:
 - [Arquitetura Hexagonal](#arquitetura-hexagonal)
 - [Spring Security](#spring-security)
 
-## Apache Kafka v0.1
+## Apache Kafka v0.2
 
 Plataforma de código aberto de streaming de eventos distribuída. Com ele é possível de publicar, armazenar, processar e consumir um grande fluxo de dados.
 
@@ -22,14 +22,42 @@ Events first: Abordagem que da ênfase aos eventos. Evento é uma mudança signi
 os eventos são armazenados de forma similar ao log, trazendo, além das informações do estado, a associação ao tempo de que o evento ocorreu. Formado por chave, valor e timestamp. <br>
 
 Event streaming: Forma de capturar, analisar e responder aos eventos em tempo real. Garante um fluxo contínuo e interpretação dos dados, para que as informações certas estejam no lugar certo e na hora certa. <br>
-O Kafka é adotado principalmente na arquitetura: Event-driven Architectures (EDA) <br>
-O Kafka tem 3 objetivos chaves: publicar e observar streams de eventos(similar a fila de mensagens), armazenar streams de eventos de maneira durável e tolerante a falhas e processar eventos de streams enquanto ocorre ou retrospectivamente. <br>
+
+Tem 3 objetivos chaves: publicar e observar streams de eventos(similar a fila de mensagens), armazenar streams de eventos de maneira durável e tolerante a falhas e processar eventos de streams enquanto ocorre ou retrospectivamente. <br>
 Faz tudo isso de maneira distribuida, escalável, elástica, tolerante a falhas e segura.
 Usado para aplicações que necessitam de pipeline de dados de streaming em tempo real que obtêm dados entre sistemas ou aplicativos de maneira confiável. Ou, aplicações de streaming em tempo real que transformam ou reagem ao fluxo de dados. <br>
 Oferece o poder de criar aplicações para streaming de informações em tempo real, entre diversos sistemas, em diversas plataformas e em diversos formatos. Podendo processar informações em tempo real, seja para operações aritméticas, agrupamento, etc. <br>
-Arquitetura clusterizada que permite que funciona em um ou mais servidores(brokers, é o nome que o kafka chama os servidores).
 
-EDA: Brevemente, é um modelo de arquitetura de software onde os componentes de captura, comunicação, processamento e armazenamento de eventos formam a estrutura básica da solução.
+Arquitetura clusterizada que permite que funciona em um ou mais servidores(brokers, é o nome que o kafka chama os servidores).<br>
+Os brokers(servidores) do apache kafka podem utilizar entre eles os conceitos principais de sistemas distribuídos: mecanismo de tolerância a falhas, disponibilidade, confiabilidade e segurança.<br>
+A arquitetura do kafka é composta por um sistema fonte que fornece os dados de entrada, produtor gera os dados, processos core gestao de todo o processo e o consumidor que se inscreve(le e processa os dados gerados para disponibilizá-los para um outro sistema).
+
+As aplicações ou produtores enviam mensagens para o nó do kafka e elas são armazenadas em um tópico e os consumidores se inscrevem nos tópicos para receber as novas mensagens. As trocas de mensagens são feitas via protocolo TCP simples. <br>
+
+Produtor é responsável por produzir e enviar dados para o kafka. Exemplo de dados: Json, email, tweet, sms, etc. E também deve informar para qual tópico e broker que enviar as informações. o Kafka se encarrega de distrbuí-las e armazená-las.
+
+*Tópicos: são onde os eventos são organizados e armazenados, conjuntos de dados imutáveis, todos têm um nome atribuído exemplo: 'codigofonte.topico'. Cada tópico é <strong>Multi-producer</strong> e <strong>Multi-subscriber</strong>, ou seja,
+pode ter 0, 1, ou vários produtores escrevendo eventos nele e pode ter 0, 1 ou vários consumidores inscritos nesse tópico. Os eventos de um tópico podem ser lidos quantas vezes for preciso, são apagados caso seja configurado para apagar e no tempo especificado.
+O desempenho do kafka é constante em relaç~~ao a quantidade e ao tamanho dos dados.
+Os tópicos são divididos em partições com tamanho menor para desempenho e escabilidade. Por definição, uma partição é uma sequencia ordenada e imutável de registros anexada continuamente a um log. cada partição recebe um conjunto de informações dentro daquele tópico.
+O kafka garante que todas as mensagens dentro da partição são ordenadas na sequência que elas chegaram.
+todo registro que é armazenado dentro da partição pertence unica e exclusivamente a ela. Um dado armazenado no offset 3 da partição 1 não tem relação ao offset 3 da partição 0.
+Os dados são entregues ao tópico e não a uma partição. O kafka que gerencia em qual partição será gravada. No entanto podemos passar uma chave na mensagem e com a chave garantir que a informação será armazenada sempre na mesma partição (quem decide a partição é o kafka também).
+
+Consumidores leem os dados armazenados em um tópico e se conectam ao broker para ler as informações. Não se deve ter mais consumidores que partições. Pode existir vários consumidores para um tópico, tanto grupo quanto individualmente ( o kafka balanceia a leitura de dados). 
+Um grupo de consumidor permite a leitura de dados de forma rápida e dinâmica, se houver um tópico com 3 partições e 3 consumidores é possível ler as 3 partições simultaneamente e paralelamente.
+O kafka armazena qual offset o consumidor está lendo, caso o processo caia ele vai saber onde parou e volta o consumo de onde parou.
+
+O kafka fornece, além da utilização de linhas de comando para gerenciamento e configuração, algumas apis:
+
+producer api, permite que uma aplicação publique um fluxo de informações em um ou mais tópicos do kafka.
+consumer api, permite que uma aplicação se inscreva ou assine um ou mais tópicos e processe o fluxo de dados produzidos para ele.
+streams api, permite que uma aplicação atue como processador de fluxo consumindo os dados e gerando resultados processados em outro tópico.
+conector api, permite criar e executar produtores ou consumidores reutilizáveis que conectam os tópicos do kafka em sistemas existentes. Exemplo: um conector para um banco de dados relacional captura todas as alterações em uma tabela. 
+admin api, gerencia e inspeciona tópicos, brokers e outros objetos do kafka.
+
+<strong>Curiosidade:</strong> atua na camada de implementação da arquitetura orientada a eventos. É adotado principalmente na arquitetura: Event-driven Architectures (EDA).
+EDA: Resumidamente, é um modelo de arquitetura de software onde os componentes de captura, comunicação, processamento e armazenamento de eventos formam a estrutura básica da solução.
 
 ## DDD v0.2
   <small><em>"Se os programadores não estão interessados no domínio, eles aprendem apenas o que a aplicação deve fazer, não os princípios por trás dela."<br> - Eric Evans</em></small>
