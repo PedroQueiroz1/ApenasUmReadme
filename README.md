@@ -13,6 +13,7 @@ Tudo escrito na unha. :grinning:
 - [Diferença entre interface e classe abstrata no Java](#diferença-entre-interface-e-classe-abstrata-no-java)
 - [Arquitetura Hexagonal](#arquitetura-hexagonal)
 - [Spring Security](#spring-security)
+- [Ferramentas de pagamento](#ferramentas-de-pagamento)
 
 ## Apache Kafka v0.2
 
@@ -127,3 +128,9 @@ Classes Abstratas:
 ## Arquitetura Hexagonal
 
 ## Spring Security
+
+## Ferramentas de pagamento
+
+Ferramentas para trabalhar com integração de pagamento: <br>
+Internacional: Stripe <br>
+Nacional: PagSeguro / Pagar.me <br>
