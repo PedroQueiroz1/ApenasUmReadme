@@ -4,7 +4,7 @@ Tudo escrito na unha. :grinning:
 
 ### Tópicos 
 
-- [Apache Kafka](#apache-kafka)
+- [Apache Kafka](#apache-kafka-v01)
 - [DDD](#ddd-v02)
 - [TDD](#tdd)
 - [BDD](#bdd)
@@ -14,7 +14,22 @@ Tudo escrito na unha. :grinning:
 - [Arquitetura Hexagonal](#arquitetura-hexagonal)
 - [Spring Security](#spring-security)
 
-## Apache Kafka
+## Apache Kafka v0.1
+
+Plataforma de código aberto de streaming de eventos distribuída. Com ele é possível de publicar, armazenar, processar e consumir um grande fluxo de dados.
+
+Events first: Abordagem que da ênfase aos eventos. Evento é uma mudança significativa em um estado, por exemplo, usuário fazendo alteração do endereço cadastrado. <br>
+os eventos são armazenados de forma similar ao log, trazendo, além das informações do estado, a associação ao tempo de que o evento ocorreu. Formado por chave, valor e timestamp. <br>
+
+Event streaming: Forma de capturar, analisar e responder aos eventos em tempo real. Garante um fluxo contínuo e interpretação dos dados, para que as informações certas estejam no lugar certo e na hora certa. <br>
+O Kafka é adotado principalmente na arquitetura: Event-driven Architectures (EDA) <br>
+O Kafka tem 3 objetivos chaves: publicar e observar streams de eventos(similar a fila de mensagens), armazenar streams de eventos de maneira durável e tolerante a falhas e processar eventos de streams enquanto ocorre ou retrospectivamente. <br>
+Faz tudo isso de maneira distribuida, escalável, elástica, tolerante a falhas e segura.
+Usado para aplicações que necessitam de pipeline de dados de streaming em tempo real que obtêm dados entre sistemas ou aplicativos de maneira confiável. Ou, aplicações de streaming em tempo real que transformam ou reagem ao fluxo de dados. <br>
+Oferece o poder de criar aplicações para streaming de informações em tempo real, entre diversos sistemas, em diversas plataformas e em diversos formatos. Podendo processar informações em tempo real, seja para operações aritméticas, agrupamento, etc. <br>
+Arquitetura clusterizada que permite que funciona em um ou mais servidores(brokers, é o nome que o kafka chama os servidores).
+
+EDA: Brevemente, é um modelo de arquitetura de software onde os componentes de captura, comunicação, processamento e armazenamento de eventos formam a estrutura básica da solução.
 
 ## DDD v0.2
   <small><em>"Se os programadores não estão interessados no domínio, eles aprendem apenas o que a aplicação deve fazer, não os princípios por trás dela."<br> - Eric Evans</em></small>
