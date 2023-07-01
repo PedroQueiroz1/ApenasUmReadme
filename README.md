@@ -14,8 +14,9 @@ Tudo escrito na unha. :grinning:
 - [Arquitetura Hexagonal](#arquitetura-hexagonal)
 - [Spring Security](#spring-security)
 - [Ferramentas de pagamento](#ferramentas-de-pagamento)
-- [Tipos de atribuições de valores](#tipos-de-atribuicoes-valores)
-
+- [Tipos de atribuições de valores](#tipos-de-atribuições-de-valores)
+- [O que é a memória HEAP?](#o-que-é-a-memória-heap)
+  
 ## Apache Kafka v0.2
 
 Plataforma de código aberto de streaming de eventos distribuída. Com ele é possível de publicar, armazenar, processar e consumir um grande fluxo de dados.
@@ -142,3 +143,7 @@ Nacional: PagSeguro / Pagar.me <br>
 2. Atribuição por referência - Quando um ponteiro ou referência para a memória em que o valor está armazenado é copiado. Duas variáveis referenciando um mesmo objeto na memória e, portanto, qualquer alteração em uma variável afetará a outra. <br>
 
 Agora em relação ao Java...
+
+
+## O que é a memória HEAP?
+
