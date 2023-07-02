@@ -40,9 +40,9 @@ Ele oferece grande disponibilidade.
 Grande tolerância a falhas.
 
 <h5>Algumas empresas que utilizam o Kafka: </h5>
-- Netflix    - Twitter   - Paypal 
-- LinkedIn   - Dropbox   - E vários bancos
-- Uber       - Spotify
+- Netflix    - Twitter   - Paypal  <br>
+- LinkedIn   - Dropbox   - Spotify <br>
+- Uber       - E vários bancos <br>
 
 
 <br><br>
