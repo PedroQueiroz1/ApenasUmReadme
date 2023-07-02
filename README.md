@@ -4,7 +4,7 @@ Tudo escrito na unha. :grinning:
 
 ### Tópicos 
 
-- [Apache Kafka](#apache-kafka-v02)
+- [Apache Kafka](#apache-kafka-v03)
 - [DDD](#ddd-v02)
 - [TDD](#tdd)
 - [BDD](#bdd)
@@ -17,10 +17,30 @@ Tudo escrito na unha. :grinning:
 - [Tipos de atribuições de valores](#tipos-de-atribuições-de-valores)
 - [O que é a memória HEAP?](#o-que-é-a-memória-heap)
   
-## Apache Kafka v0.2
+## Apache Kafka v0.3
 
-Plataforma de código aberto de streaming de eventos distribuída. Com ele é possível de publicar, armazenar, processar e consumir um grande fluxo de dados.
+<h5> O que é o Kafka? </h5>
+Plataforma de código aberto de streaming de eventos que trabalha de forma distribuída. Com ele é possível de publicar, armazenar, processar e consumir um grande fluxo de dados.
+O Apache Kafka é mais que um sistema de filas ou um sistema de mensageria.
+É trabalhado no formato de filas.
 
+<h5>Por que precisamos do Apache Kafka? </h5>
+Trabalhar com stream de dados. Hoje em dia quase todos os sistemas são orientados a eventos.
+Quando se tem um dado/informação e o objetivo é passar a informação de um sistema para o outro, armazenar para consultas futuras, pegar a informação e transformar para jogar em outros sistemas, etc.
+O Apache Kafka é mais que um sistema de filas. 
+
+<h5>Qual trabalho que o Apache Kafka tem? </h5>
+Pega todos os eventos que acontecem e salvam os dados. Além de manipular todas essas informações ele guarda as informações para utilizá-las futuramente, tanto para trabalhar com estatísticas, fazer médias, agrupar informações, etc.
+
+<h5>Vantagens do Apache Kafka </h5>
+Ele aguenta processar uma quantidade exagerada de informações e ainda assim trabalhar com uma latência baixíssima (abaixo de 2ms). 
+É escalável.
+Tem como opção de guardar permanentemente as informações ou de acordo com o período configurado.
+Ele oferece grande disponibilidade.
+Grande tolerância a falhas.
+
+<br><br>
+// v0.2 <br>
 Events first: Abordagem que da ênfase aos eventos. Evento é uma mudança significativa em um estado, por exemplo, usuário fazendo alteração do endereço cadastrado. <br>
 os eventos são armazenados de forma similar ao log, trazendo, além das informações do estado, a associação ao tempo de que o evento ocorreu. Formado por chave, valor e timestamp. <br>
 
