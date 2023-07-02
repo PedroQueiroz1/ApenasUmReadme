@@ -32,12 +32,18 @@ O Apache Kafka é mais que um sistema de filas.
 <h5>Qual trabalho que o Apache Kafka tem? </h5>
 Pega todos os eventos que acontecem e salvam os dados. Além de manipular todas essas informações ele guarda as informações para utilizá-las futuramente, tanto para trabalhar com estatísticas, fazer médias, agrupar informações, etc.
 
-<h5>Vantagens do Apache Kafka </h5>
+<h5>Vantagens do Apache Kafka: </h5>
 Ele aguenta processar uma quantidade exagerada de informações e ainda assim trabalhar com uma latência baixíssima (abaixo de 2ms). 
 É escalável.
 Tem como opção de guardar permanentemente as informações ou de acordo com o período configurado.
 Ele oferece grande disponibilidade.
 Grande tolerância a falhas.
+
+<h5>Algumas empresas que utilizam o Kafka: </h5>
+- Netflix    - Twitter   - Paypal 
+- LinkedIn   - Dropbox   - E vários bancos
+- Uber       - Spotify
+
 
 <br><br>
 // v0.2 <br>
