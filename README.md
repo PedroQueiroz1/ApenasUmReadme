@@ -1,8 +1,8 @@
 # Apenas Um Readme
 
-Esse é um Readme que decidi fazer para estudos, para conseguir massificar as informações que venho estudando ultimamente e lapidar alguns conceitos que já conhecia.
-Meu objetivo é ter tudo na ponta da lingua e saber explicar sem travar em nenhum momento, sobre todos os tópicos abordados.
-Com o tempo eu vou adicionando mais tópicos conforme vou estudando sobre mais assuntos que ao meu ver parecem interessantes.
+Esse é um Readme que decidi fazer para estudos, para conseguir massificar as informações que venho estudando ultimamente e lapidar alguns conceitos que já conhecia.<br>
+Meu objetivo é ter tudo na ponta da lingua e saber explicar sem travar em nenhum momento, sobre todos os tópicos abordados.<br>
+Com o tempo eu vou adicionando mais tópicos conforme vou estudando sobre mais assuntos que ao meu ver parecem interessantes.<br>
 Tudo escrito na unha. :grinning:
 
 ### Tópicos 
