@@ -9,7 +9,7 @@ Tudo escrito na unha. :grinning:
 - [TDD](#tdd)
 - [BDD](#bdd)
 - [Scrum](#scrum)
-- [SOLID](#solid)
+- [SOLID](#solid-v01)
 - [Diferença entre interface e classe abstrata no Java](#diferença-entre-interface-e-classe-abstrata-no-java)
 - [Arquitetura Hexagonal](#arquitetura-hexagonal)
 - [Spring Security](#spring-security)
@@ -134,7 +134,20 @@ Tipos de relacionamentos Customer-Supplier Development:
 
 ## Scrum
 
-## SOLID
+## SOLID v0.1
+
+<h5>O que é SOLID? </h5>
+SOLID é um acrônimo de 5 definições que são aplicadas para obter boas práticas nos projetos.
+
+<h5>Quais são as 5 definições? </h5>
+1. S -> Single Responsibility Principle (Princípio da responsabilidade única)
+2. O -> Open-Closed Principle (Princípio Aberto-Fechado)
+3. L -> Liskov Subtitution Principle (Princípio da substituição de Liskov)
+4. I -> Interface Segregation Principle (Princípio da Segregação da Interface)
+5. D -> Dependency Inversion Principle (Princípio da inversão de dependência)
+
+<h5>O que são exatamente cada um desses princípios? </h5>
+1. 
 
 ## Diferença entre interface e classe abstrata no Java
 
