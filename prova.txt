@@ -3,13 +3,9 @@ Algumas questões para responder:
 Kafka:
 
 1. O que é o Apache Kafka e qual é o seu propósito?
-
 2. Quais são os componentes principais do Kafka?
-
 3. Explique o que são produtores e consumidores no contexto do Kafka.
-
 4. Como o Kafka lida com a escalabilidade e tolerância a falhas?
-
 5. Quais são os casos de uso comuns para o Apache Kafka?
 
 DDD:
