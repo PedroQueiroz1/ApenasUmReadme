@@ -15,3 +15,11 @@ DDD:
 3. Explique o padrão de arquitetura CQRS (Command Query Responsibility Segregation) e como ele se relaciona com o DDD.
 4. Quais são os benefícios de usar o DDD em um projeto de software?
 5. Como o DDD promove a colaboração entre especialistas do domínio e desenvolvedores?
+
+Interface vs Classe Abstrata em Java:
+
+1. Explique o que é uma interface em Java e como ela difere de uma classe abstrata.
+2. Quais são as principais características de uma interface em Java?
+3. Quais são as principais características de uma classe abstrata em Java?
+4. Em termos de herança, como as interfaces e classes abstratas se comportam de maneira diferente?
+5. Quando é mais apropriado usar uma interface em vez de uma classe abstrata, e vice-versa?
