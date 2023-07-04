@@ -1,0 +1,21 @@
+Algumas questões para responder:
+
+Kafka:
+
+1. O que é o Apache Kafka e qual é o seu propósito?
+
+2. Quais são os componentes principais do Kafka?
+
+3. Explique o que são produtores e consumidores no contexto do Kafka.
+
+4. Como o Kafka lida com a escalabilidade e tolerância a falhas?
+
+5. Quais são os casos de uso comuns para o Apache Kafka?
+
+DDD:
+
+1. O que é o Domain-Driven Design (DDD)?
+2. Quais são os principais conceitos do DDD, como agregados, entidades e serviços de domínio?
+3. Explique o padrão de arquitetura CQRS (Command Query Responsibility Segregation) e como ele se relaciona com o DDD.
+4. Quais são os benefícios de usar o DDD em um projeto de software?
+5. Como o DDD promove a colaboração entre especialistas do domínio e desenvolvedores?
