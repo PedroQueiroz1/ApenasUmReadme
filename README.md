@@ -183,14 +183,17 @@ Internacional: Stripe <br>
 Nacional: PagSeguro / Pagar.me <br>
 
 ## Tipos de atribuições de valores
-
 1. Atribuição por valor - Quando o valor real da variável é copiado e atribuído a outra variável ou passado como argumento para uma função. Variáveis com cópia independente de seus valores. <br>
 2. Atribuição por referência - Quando um ponteiro ou referência para a memória em que o valor está armazenado é copiado. Duas variáveis referenciando um mesmo objeto na memória e, portanto, qualquer alteração em uma variável afetará a outra. <br>
 
 Agora em relação ao Java...
 
-## Webflux
-
-
 ## O que é a memória HEAP?
+Memória HEAP é uma memória usada para armazenar objetos e instâncias de classes, com alocação e desalocação controladas pelo programador. <br>
+Por outro lado, temos a memória stack que é usada para armazenar variáveis locais e dados relacionados às chamadas de função, com alocação e
+desalocação automáticas. <br>
+No Java, a memória heap é usada para alocar objetos e é gerenciada automaticamente pelo garbage collector.<br>
+Já a memória stack é usada para armazenar variáveis locais e referências a objetos.
+
+## Webflux
 
