@@ -22,6 +22,7 @@ Tudo escrito na unha. :grinning:
 - [Tipos de atribuições de valores](#tipos-de-atribuições-de-valores)
 - [O que é a memória HEAP?](#o-que-é-a-memória-heap)
 - [WebFlux](#Webflux)
+- [Padrões de projeto](#padrões-de-projeto)
   
 ## Apache Kafka v0.3
 
@@ -197,3 +198,9 @@ Já a memória stack é usada para armazenar variáveis locais e referências a 
 
 ## Webflux
 
+## Padrões de projeto
+Estou estudando 3 tipos de padrões de projeto: Criacionais, Estruturais e Comportamentais. <br>
+Primeiramente vou começar com um breve resumo sobre cada um. <br>
+Padrões de projetos Criacionais basicamente existem diversos mecanismos para criar um objeto. Ao invés de utilizar diretamente o operador "new", podemos utilizar algum padrão que nos forneça mais flexibilidade no código. <br>
+Padrões de projetos Estruturais mostra como objetos podem se unir em estruturas maiores, porém de forma organizada, facilitando possíveis extensões. <br>
+Padrões de projetos Comportamentais organiza a forma de comunicação entre os objetos.
