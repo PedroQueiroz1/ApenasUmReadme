@@ -95,6 +95,8 @@ admin api, gerencia e inspeciona tópicos, brokers e outros objetos do kafka.
 <strong>Curiosidade:</strong> atua na camada de implementação da arquitetura orientada a eventos. É adotado principalmente na arquitetura: Event-driven Architectures (EDA).
 EDA: Resumidamente, é um modelo de arquitetura de software onde os componentes de captura, comunicação, processamento e armazenamento de eventos formam a estrutura básica da solução.
 
+
+
 ## DDD v0.2
   <small><em>"Se os programadores não estão interessados no domínio, eles aprendem apenas o que a aplicação deve fazer, não os princípios por trás dela."<br> - Eric Evans</em></small>
   
@@ -135,11 +137,19 @@ Tipos de relacionamentos Customer-Supplier Development:
 2. Partner: nesse relacionamento os bounded contexts parceiros, unidos por uma dependência mutua e deverão trabalhar em conjunto.
 3. Anticorruption Layer: ja nesse relacionamento a equipe downstream cria uma camada para proteger o seu contexto das modificações do upstream (comum em sistemas legados).
 
+
+
 ## TDD
+
+
 
 ## BDD
 
+
+
 ## Scrum
+
+
 
 ## SOLID v0.1
 
@@ -156,6 +166,8 @@ SOLID é um acrônimo de 5 definições que são aplicadas para obter boas prát
 <h5>O que são exatamente cada um desses princípios? </h5>
 1. 
 
+
+
 ## Diferença entre interface e classe abstrata no Java
 
 Interfaces:
@@ -166,6 +178,8 @@ Interfaces:
 - É um contrato que define os métodos que uma classe deve implementar, não pode ser instanciada.
 - Necessária quando é pra definir um contrato comum a um grupo de classes não necessariamente relacionadas, permitindo que compartilhem de comportamentos independentemente de sua hierarquia.
 
+
+
 Classes Abstratas:
 - Pode ter métodos abstratos(sem implementação) e métodos concretos.
 - Pode ser estendida por uma ou várias classes.
@@ -173,9 +187,15 @@ Classes Abstratas:
 - Pode ser instanciada.
 - Necessária quando é pra fornecer uam implementação padrão para um conjunto de classes relacionadas e que também deseja permitir que essas classes personalizem partes específicas do comportamento.
 
+
+
 ## Arquitetura Hexagonal
 
+
+
 ## Spring Security
+
+
 
 ## Ferramentas de pagamento
 
@@ -183,11 +203,15 @@ Ferramentas para trabalhar com integração de pagamento: <br>
 Internacional: Stripe <br>
 Nacional: PagSeguro / Pagar.me <br>
 
+
+
 ## Tipos de atribuições de valores
 1. Atribuição por valor - Quando o valor real da variável é copiado e atribuído a outra variável ou passado como argumento para uma função. Variáveis com cópia independente de seus valores. <br>
 2. Atribuição por referência - Quando um ponteiro ou referência para a memória em que o valor está armazenado é copiado. Duas variáveis referenciando um mesmo objeto na memória e, portanto, qualquer alteração em uma variável afetará a outra. <br>
 
 Agora em relação ao Java...
+
+
 
 ## O que é a memória HEAP?
 Memória HEAP é uma memória usada para armazenar objetos e instâncias de classes, com alocação e desalocação controladas pelo programador. <br>
@@ -196,9 +220,12 @@ desalocação automáticas. <br>
 No Java, a memória heap é usada para alocar objetos e é gerenciada automaticamente pelo garbage collector.<br>
 Já a memória stack é usada para armazenar variáveis locais e referências a objetos.
 
+
+
 ## Webflux
 
 ## Padrões de projeto
+ <small><em>"Cada padrão descreve um problema que ocorre frequentemente em seu ambiente, e então descreve o cerne da solução para aquele problema, de um modo tal que você pode usar esta solução milhões de vezes, sem nunca fazer a mesma coisa repetida."<br> - Christopher Alexander</em></small>
 Estou estudando 3 tipos de padrões de projeto: Criacionais, Estruturais e Comportamentais. <br>
 Primeiramente vou começar com um breve resumo sobre cada um. <br>
 <strong> Padrões de projetos Criacionais </strong> basicamente existem diversos mecanismos para criar um objeto. Ao invés de utilizar diretamente o operador "new", podemos utilizar algum padrão que nos forneça mais flexibilidade no código. <br>
