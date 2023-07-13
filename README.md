@@ -201,6 +201,6 @@ Já a memória stack é usada para armazenar variáveis locais e referências a 
 ## Padrões de projeto
 Estou estudando 3 tipos de padrões de projeto: Criacionais, Estruturais e Comportamentais. <br>
 Primeiramente vou começar com um breve resumo sobre cada um. <br>
-Padrões de projetos Criacionais basicamente existem diversos mecanismos para criar um objeto. Ao invés de utilizar diretamente o operador "new", podemos utilizar algum padrão que nos forneça mais flexibilidade no código. <br>
-Padrões de projetos Estruturais mostra como objetos podem se unir em estruturas maiores, porém de forma organizada, facilitando possíveis extensões. <br>
-Padrões de projetos Comportamentais organiza a forma de comunicação entre os objetos.
+<strong> Padrões de projetos Criacionais </strong> basicamente existem diversos mecanismos para criar um objeto. Ao invés de utilizar diretamente o operador "new", podemos utilizar algum padrão que nos forneça mais flexibilidade no código. <br>
+<strong> Padrões de projetos Estruturais </strong> mostra como objetos podem se unir em estruturas maiores, porém de forma organizada, facilitando possíveis extensões. <br>
+<strong> Padrões de projetos Comportamentais </strong> organiza a forma de comunicação entre os objetos.
