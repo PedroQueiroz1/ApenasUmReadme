@@ -225,7 +225,7 @@ Já a memória stack é usada para armazenar variáveis locais e referências a 
 ## Webflux
 
 ## Padrões de projeto
- <small><em>"Cada padrão descreve um problema que ocorre frequentemente em seu ambiente, e então descreve o cerne da solução para aquele problema, de um modo tal que você pode usar esta solução milhões de vezes, sem nunca fazer a mesma coisa repetida."<br> - Christopher Alexander</em></small>
+ <small><em>"Cada padrão descreve um problema que ocorre frequentemente em seu ambiente, e então descreve o cerne da solução para aquele problema, de um modo tal que você pode usar esta solução milhões de vezes, sem nunca fazer a mesma coisa repetida."<br> - Christopher Alexander</em></small> <br>
 Estou estudando 3 tipos de padrões de projeto: Criacionais, Estruturais e Comportamentais. <br>
 Primeiramente vou começar com um breve resumo sobre cada um. <br>
 <strong> Padrões de projetos Criacionais </strong> basicamente existem diversos mecanismos para criar um objeto. Ao invés de utilizar diretamente o operador "new", podemos utilizar algum padrão que nos forneça mais flexibilidade no código. <br>
