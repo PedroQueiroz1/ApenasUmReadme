@@ -9,7 +9,7 @@ Tudo escrito na unha. :grinning:
 
 ### Tópicos 
 
-- [Apache Kafka](#apache-kafka-v03)
+- [Apache Kafka](#apache-kafka-v04)
 - [DDD](#ddd-v02)
 - [TDD](#tdd)
 - [BDD](#bdd)
@@ -24,76 +24,25 @@ Tudo escrito na unha. :grinning:
 - [WebFlux](#Webflux)
 - [Padrões de projeto](#padrões-de-projeto)
   
-## Apache Kafka v0.3
+## Apache Kafka v0.4
 
-<h5> O que é o Kafka? </h5>
-Plataforma de código aberto de streaming de eventos que trabalha de forma distribuída. Com ele é possível de publicar, armazenar, processar e consumir um grande fluxo de dados.
-O Apache Kafka é mais que um sistema de filas ou um sistema de mensageria.
-É trabalhado no formato de filas.
+Use Cases - Apache Kafka: <br>
+[Source](https://kafka.apache.org/uses) <br><br>
+1 - Mensageria: <br>
+O Kafka funciona bem como substituto para brokers de mensagens tradicionais. Os brokers de mensagens são usados por diversas razões (para separar o processamento dos produtores de dados, para armazenar mensagens não processadas, etc).
+Em comparação com a maioria dos sistemas de mensagens, o Kafka possui a melhor taxa de transferência, particionamento incorporado, replicação e tolerância a falhas, o que torna uma boa solução para aplicativos de processamento de mensagens de larga escala.
+Esse uso é comparável a sistemas de mensagens tradicionais, como ActiveMQ ou RabbitMQ.<br>
+2 - Rastreamento de atividades de sites: <br>
+O caso de uso original do Kafka era reconstruir um pipeline de rastreamento de atividades do usuário como um conjunto de feeds de publicação e assinatura em tempo real. Isso significa que as atividades do site (visualizações de página, pesquisas ou ações que os usuários possam fazer) são publicadas em tópicos centrais, com um tópico por tipo de atividade. Esses feeds estão disponíveis para assinatura em uma variedade de casos de uso, incluindo processamento em tempo real, monitoramento em tempo real e carregamento em sistemas Hadoop ou data warehouses offline para processamento em relatórios offline.
+O rastreamento de atividades geralmente gera um grande volume de mensagens, pois muitas mensagens de atividades são geradas para cada visualização de página do usuário. <br>
+3 - Métricas: <br>
+O Kafka é frequentemente usado para dados de monitoramento operacional. Isso envolve a agregação de estatísticas de aplicativos distribuídos para produzir feeds centralizados de dados operacionais.
+4 - Agregação de logs: <br>
+Muitas pessoas usam o Kafka como substituto para uma solução de agregação de logs. A agregação de logs geralmente coleta arquivos de log físicos de servidores e os coloca em um local centralizado (um servidor de arquivos ou HDFS, por exemplo) para processamento.
+O Kafka abstrai os detalhes dos arquivos e fornece uma abstração mais limpa dos dados de log ou evento como um fluxo de mensagens. Isso permite processamento com latência reduzida e suporte mais fácil para várias fontes de dados e consumo de dados distribuído.
+Em comparação com sistemas centrados em logs como Scribe ou Flume, o Kafka oferece desempenho igualmente bom, garantias de durabilidade mais fortes devido à replicação e latência de ponta a ponta muito menor. <br>
+5 - Processamento de fluxo: <br>
 
-<h5>Por que precisamos do Apache Kafka? </h5>
-Trabalhar com stream de dados. Hoje em dia quase todos os sistemas são orientados a eventos.
-Quando se tem um dado/informação e o objetivo é passar a informação de um sistema para o outro, armazenar para consultas futuras, pegar a informação e transformar para jogar em outros sistemas, etc.
-O Apache Kafka é mais que um sistema de filas. 
-
-<h5>Qual trabalho que o Apache Kafka tem? </h5>
-Pega todos os eventos que acontecem e salvam os dados. Além de manipular todas essas informações ele guarda as informações para utilizá-las futuramente, tanto para trabalhar com estatísticas, fazer médias, agrupar informações, etc.
-
-<h5>Vantagens do Apache Kafka: </h5>
-Ele aguenta processar uma quantidade exagerada de informações e ainda assim trabalhar com uma latência baixíssima (abaixo de 2ms). 
-É escalável.
-Tem como opção de guardar permanentemente as informações ou de acordo com o período configurado.
-Ele oferece grande disponibilidade.
-Grande tolerância a falhas.
-
-<h5>Algumas empresas que utilizam o Kafka: </h5>
-- Netflix    - Twitter   - Paypal  <br>
-- LinkedIn   - Dropbox   - Spotify <br>
-- Uber       - E vários bancos <br>
-
-
-<br><br>
-// v0.2 <br>
-Events first: Abordagem que da ênfase aos eventos. Evento é uma mudança significativa em um estado, por exemplo, usuário fazendo alteração do endereço cadastrado. <br>
-os eventos são armazenados de forma similar ao log, trazendo, além das informações do estado, a associação ao tempo de que o evento ocorreu. Formado por chave, valor e timestamp. <br>
-
-Event streaming: Forma de capturar, analisar e responder aos eventos em tempo real. Garante um fluxo contínuo e interpretação dos dados, para que as informações certas estejam no lugar certo e na hora certa. <br>
-
-Tem 3 objetivos chaves: publicar e observar streams de eventos(similar a fila de mensagens), armazenar streams de eventos de maneira durável e tolerante a falhas e processar eventos de streams enquanto ocorre ou retrospectivamente. <br>
-Faz tudo isso de maneira distribuida, escalável, elástica, tolerante a falhas e segura.
-Usado para aplicações que necessitam de pipeline de dados de streaming em tempo real que obtêm dados entre sistemas ou aplicativos de maneira confiável. Ou, aplicações de streaming em tempo real que transformam ou reagem ao fluxo de dados. <br>
-Oferece o poder de criar aplicações para streaming de informações em tempo real, entre diversos sistemas, em diversas plataformas e em diversos formatos. Podendo processar informações em tempo real, seja para operações aritméticas, agrupamento, etc. <br>
-
-Arquitetura clusterizada que permite que funciona em um ou mais servidores(brokers, é o nome que o kafka chama os servidores).<br>
-Os brokers(servidores) do apache kafka podem utilizar entre eles os conceitos principais de sistemas distribuídos: mecanismo de tolerância a falhas, disponibilidade, confiabilidade e segurança.<br>
-A arquitetura do kafka é composta por um sistema fonte que fornece os dados de entrada, produtor gera os dados, processos core gestao de todo o processo e o consumidor que se inscreve(le e processa os dados gerados para disponibilizá-los para um outro sistema).
-
-As aplicações ou produtores enviam mensagens para o nó do kafka e elas são armazenadas em um tópico e os consumidores se inscrevem nos tópicos para receber as novas mensagens. As trocas de mensagens são feitas via protocolo TCP simples. <br>
-
-Produtor é responsável por produzir e enviar dados para o kafka. Exemplo de dados: Json, email, tweet, sms, etc. E também deve informar para qual tópico e broker que enviar as informações. o Kafka se encarrega de distrbuí-las e armazená-las.
-
-*Tópicos: são onde os eventos são organizados e armazenados, conjuntos de dados imutáveis, todos têm um nome atribuído exemplo: 'codigofonte.topico'. Cada tópico é <strong>Multi-producer</strong> e <strong>Multi-subscriber</strong>, ou seja,
-pode ter 0, 1, ou vários produtores escrevendo eventos nele e pode ter 0, 1 ou vários consumidores inscritos nesse tópico. Os eventos de um tópico podem ser lidos quantas vezes for preciso, são apagados caso seja configurado para apagar e no tempo especificado.
-O desempenho do kafka é constante em relaç~~ao a quantidade e ao tamanho dos dados.
-Os tópicos são divididos em partições com tamanho menor para desempenho e escabilidade. Por definição, uma partição é uma sequencia ordenada e imutável de registros anexada continuamente a um log. cada partição recebe um conjunto de informações dentro daquele tópico.
-O kafka garante que todas as mensagens dentro da partição são ordenadas na sequência que elas chegaram.
-todo registro que é armazenado dentro da partição pertence unica e exclusivamente a ela. Um dado armazenado no offset 3 da partição 1 não tem relação ao offset 3 da partição 0.
-Os dados são entregues ao tópico e não a uma partição. O kafka que gerencia em qual partição será gravada. No entanto podemos passar uma chave na mensagem e com a chave garantir que a informação será armazenada sempre na mesma partição (quem decide a partição é o kafka também).
-
-Consumidores leem os dados armazenados em um tópico e se conectam ao broker para ler as informações. Não se deve ter mais consumidores que partições. Pode existir vários consumidores para um tópico, tanto grupo quanto individualmente ( o kafka balanceia a leitura de dados). 
-Um grupo de consumidor permite a leitura de dados de forma rápida e dinâmica, se houver um tópico com 3 partições e 3 consumidores é possível ler as 3 partições simultaneamente e paralelamente.
-O kafka armazena qual offset o consumidor está lendo, caso o processo caia ele vai saber onde parou e volta o consumo de onde parou.
-
-O kafka fornece, além da utilização de linhas de comando para gerenciamento e configuração, algumas apis:
-
-producer api, permite que uma aplicação publique um fluxo de informações em um ou mais tópicos do kafka.
-consumer api, permite que uma aplicação se inscreva ou assine um ou mais tópicos e processe o fluxo de dados produzidos para ele.
-streams api, permite que uma aplicação atue como processador de fluxo consumindo os dados e gerando resultados processados em outro tópico.
-conector api, permite criar e executar produtores ou consumidores reutilizáveis que conectam os tópicos do kafka em sistemas existentes. Exemplo: um conector para um banco de dados relacional captura todas as alterações em uma tabela. 
-admin api, gerencia e inspeciona tópicos, brokers e outros objetos do kafka.
-
-<strong>Curiosidade:</strong> atua na camada de implementação da arquitetura orientada a eventos. É adotado principalmente na arquitetura: Event-driven Architectures (EDA).
-EDA: Resumidamente, é um modelo de arquitetura de software onde os componentes de captura, comunicação, processamento e armazenamento de eventos formam a estrutura básica da solução.
 
 
 
