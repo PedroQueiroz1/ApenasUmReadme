@@ -230,4 +230,8 @@ Estou estudando 3 tipos de padrões de projeto: Criacionais, Estruturais e Compo
 Primeiramente vou começar com um breve resumo sobre cada um. <br>
 <strong> Padrões de projetos Criacionais </strong> basicamente existem diversos mecanismos para criar um objeto. Ao invés de utilizar diretamente o operador "new", podemos utilizar algum padrão que nos forneça mais flexibilidade no código. <br>
 <strong> Padrões de projetos Estruturais </strong> mostra como objetos podem se unir em estruturas maiores, porém de forma organizada, facilitando possíveis extensões. <br>
-<strong> Padrões de projetos Comportamentais </strong> organiza a forma de comunicação entre os objetos.
+<strong> Padrões de projetos Comportamentais </strong> organiza a forma de comunicação entre os objetos.<br><br>
+Anotação para organização futura: <br>
+Padrões de projeto Criacionais: Factory Method, Abstract Factory, Singleton, Monostate, Builder, Prototype. <br>
+Padrões de projeto Estruturais: Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy. <br>
+Padrões de projeto Comportamentais: Chain of Responsability, Memento, Command, Iterator, Mediator, Observer, State, Strategy, Template Method. <br>
