@@ -26,7 +26,7 @@ Tudo escrito na unha. :grinning:
   
 ## Apache Kafka v0.4
 
-Use Cases - Apache Kafka: <br>
+### <strong> Use Cases - Apache Kafka: </strong> <br>
 [Source](https://kafka.apache.org/uses) <br><br>
 1 - Mensageria: <br>
 O Kafka funciona bem como substituto para brokers de mensagens tradicionais. Os brokers de mensagens são usados por diversas razões (para separar o processamento dos produtores de dados, para armazenar mensagens não processadas, etc).
@@ -42,8 +42,15 @@ Muitas pessoas usam o Kafka como substituto para uma solução de agregação de
 O Kafka abstrai os detalhes dos arquivos e fornece uma abstração mais limpa dos dados de log ou evento como um fluxo de mensagens. Isso permite processamento com latência reduzida e suporte mais fácil para várias fontes de dados e consumo de dados distribuído.
 Em comparação com sistemas centrados em logs como Scribe ou Flume, o Kafka oferece desempenho igualmente bom, garantias de durabilidade mais fortes devido à replicação e latência de ponta a ponta muito menor. <br>
 5 - Processamento de fluxo: <br>
-
-
+Muitos usuários do Kafka processam dados em pipelines de processamento compostos por vários estágios, nos quais os dados brutos de entrada são consumidos a partir de tópicos do Kafka e, em seguida, agregados, enriquecidos ou transformados de outras formas em novos tópicos para consumo ou processamento subsequente. Por exemplo, <br> 
+um pipeline de processamento para recomendar artigos de notícias pode coletar o conteúdo do artigo de feeds RSS e publicá-lo em um tópico "artigos"; <br>
+um processamento posterior pode normalizar ou deduplicar esse conteúdo e publicar o conteúdo do artigo depurado em um novo tópico;<br>
+uma etapa final de processamento pode tentar recomendar esse conteúdo aos usuári9os.<br>
+Esses pipeline de processamento criam gráficos de fluxos de dados em tempo real com base nos tópicos individuais. A partir da versão 0.10.0.0, uma biblioteca de processamento de fluxo leve, porém poderosa, chamdaa Kafka Streams, está disponível no Apache Kafka para realizar esse processamento de fluxo de código aberto alternativas incluem o Apache storm e o Apache Samza. <br>
+6 - Event Sourcing: <br>
+Event sourcing é um estilo de design de aplicativo no qual as alterações de estado são registradas como uma sequência de registros ordenados por tempo. O suporte do Kafka para armazenamento de log muito grande o torna um excelente backend para um aplicativo construído nesse estilo. <br>
+7 - Log de confirmação: <br>
+O Kafka pode servir como um tipo de log de confirmação externo para um sistema distribuído. O log ajuda a replicar dados entre nós e atua como um mecanismo de ressincronização para nós com falha restaurarem seus dados. O recurso de compactação de log no Kafka ajuda a suportar esse uso. Nesse caso, o Kafka é semelhante ao projeto Apache BookKeeper.
 
 
 ## DDD v0.2
