@@ -37,7 +37,7 @@ O caso de uso original do Kafka era reconstruir um pipeline de rastreamento de a
 O rastreamento de atividades geralmente gera um grande volume de mensagens, pois muitas mensagens de atividades são geradas para cada visualização de página do usuário. <br>
 3 - <strong> Métricas: </strong> <br>
 O Kafka é frequentemente usado para dados de monitoramento operacional. Isso envolve a agregação de estatísticas de aplicativos distribuídos para produzir feeds centralizados de dados operacionais.<br>
-4 - Agregação de logs: </strong> <br>
+4 - <strong> Agregação de logs: </strong> <br>
 Muitas pessoas usam o Kafka como substituto para uma solução de agregação de logs. A agregação de logs geralmente coleta arquivos de log físicos de servidores e os coloca em um local centralizado (um servidor de arquivos ou HDFS, por exemplo) para processamento.
 O Kafka abstrai os detalhes dos arquivos e fornece uma abstração mais limpa dos dados de log ou evento como um fluxo de mensagens. Isso permite processamento com latência reduzida e suporte mais fácil para várias fontes de dados e consumo de dados distribuído.
 Em comparação com sistemas centrados em logs como Scribe ou Flume, o Kafka oferece desempenho igualmente bom, garantias de durabilidade mais fortes devido à replicação e latência de ponta a ponta muito menor. <br>
