@@ -49,7 +49,7 @@ uma etapa final de processamento pode tentar recomendar esse conteúdo aos usuá
 Esses pipeline de processamento criam gráficos de fluxos de dados em tempo real com base nos tópicos individuais. A partir da versão 0.10.0.0, uma biblioteca de processamento de fluxo leve, porém poderosa, chamdaa Kafka Streams, está disponível no Apache Kafka para realizar esse processamento de fluxo de código aberto alternativas incluem o Apache storm e o Apache Samza. <br>
 6 - <strong> Event Sourcing: </strong> <br>
 Event sourcing é um estilo de design de aplicativo no qual as alterações de estado são registradas como uma sequência de registros ordenados por tempo. O suporte do Kafka para armazenamento de log muito grande o torna um excelente backend para um aplicativo construído nesse estilo. <br>
-7 - <strong> Log de confirmação: </strong> <br>
+7 - <strong> Commit Log: </strong> <br>
 O Kafka pode servir como um tipo de log de confirmação externo para um sistema distribuído. O log ajuda a replicar dados entre nós e atua como um mecanismo de ressincronização para nós com falha restaurarem seus dados. O recurso de compactação de log no Kafka ajuda a suportar esse uso. Nesse caso, o Kafka é semelhante ao projeto Apache BookKeeper.<br>
 
 
