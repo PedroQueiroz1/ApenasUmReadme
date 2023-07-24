@@ -105,6 +105,17 @@ Tipos de relacionamentos Customer-Supplier Development:
 
 ## Scrum
 
+<strong>Backlog do Produto</strong><br>
+É uma lista contendo tudo o que deseja que seja contemplado pelo projeto para chegar em um produto. Contém os requisitos do sistema.<br>
+<strong>História do Usuário/User story</strong><br>
+É cada requisito registrado no Backlog do Produto.<br>
+<strong>Sprint</strong><br>
+É cada interação que ocorre com períodos fixos para ser trabalhado no desenvolvimento de um produto entregável. Geralmente tem duração de 2 a 4 semanas. <br>
+Durante a sprint é retalizado uma lista de requisitos(retirados do backlog do produto) a serem trabalhados que foram previamente acordados e essa lista é chamada de <strong>Sprint Backlog</strong>
+que é definida no início de cada sprint durante o evento que é chamado de <strong>Spring Planning</strong>(planejamento da sprint).<br>
+Ao longo da sprint é comum que a equipe realize reuniões dirárias que são chamadas de <strong>Daily Scrum</strong> ou <strong>Daily Stand-up</strong> onde é discutido o processo, o que foi concluído desde a última reunião e quaisquer impedimentos que estejam afetando o trabalho.<br>
+Ao final da Sprint ocorre o processo que é chamado de <strong>Sprint Review</strong> onde é feita a demonstração do incremento do produto à equipe de <strong>Stakeholders</strong> e recebe feedback.<br>
+Após a Sprint Review, ocorre o <strong>Sprint Retrospective</strong> uma reunião em que a equipe reflete sobre o processo de trabalho da sprint anterior e indetifica oportunidades de melhoria para a próxima sprint.<br>
 
 
 ## SOLID v0.1
