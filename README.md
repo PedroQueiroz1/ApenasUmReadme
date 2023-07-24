@@ -105,11 +105,11 @@ Tipos de relacionamentos Customer-Supplier Development:
 
 ## Scrum
 
-<strong>Backlog do Produto</strong><br>
+### Backlog do Produto
 É uma lista contendo tudo o que deseja que seja contemplado pelo projeto para chegar em um produto. Contém os requisitos do sistema.<br>
 <strong>História do Usuário/User story</strong><br>
 É cada requisito registrado no Backlog do Produto.<br>
-<strong>Sprint</strong><br>
+### Sprint
 É cada interação que ocorre com períodos fixos para ser trabalhado no desenvolvimento de um produto entregável. Geralmente tem duração de 2 a 4 semanas. <br>
 Durante a sprint é retalizado uma lista de requisitos(retirados do backlog do produto) a serem trabalhados que foram previamente acordados e essa lista é chamada de <strong>Sprint Backlog</strong>
 que é definida no início de cada sprint durante o evento que é chamado de <strong>Spring Planning</strong>(planejamento da sprint).<br>
