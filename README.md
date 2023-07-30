@@ -161,7 +161,7 @@ Classes Abstratas:
 
 
 ## Spring Security
-Anotações: Spring Security gera o usuário user com senha aleatória sempre que é executado, caso não seja configurado no application.properties o usuário e a senha.
+Anotações: Spring Security gera o usuário user com senha aleatória sempre que é executado, caso não seja configurado no application.properties o usuário e a senha. Também é criado na url localhost:8080/login o formulário de login padrão do spring security
 
 
 ## Ferramentas de pagamento
