@@ -161,7 +161,7 @@ Classes Abstratas:
 
 
 ## Spring Security
-
+Anotações: Spring Security gera o usuário user com senha aleatória sempre que é executado, caso não seja configurado no application.properties o usuário e a senha.
 
 
 ## Ferramentas de pagamento
