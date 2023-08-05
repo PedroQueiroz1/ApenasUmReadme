@@ -23,6 +23,7 @@ Tudo escrito na unha. :grinning:
 - [O que é a memória HEAP?](#o-que-é-a-memória-heap)
 - [WebFlux](#Webflux)
 - [Padrões de projeto](#padrões-de-projeto)
+- [Listas](#Listas)
   
 ## Apache Kafka v0.4
 
@@ -202,3 +203,21 @@ Anotação para organização futura: <br>
 Padrões de projeto Criacionais: Factory Method, Abstract Factory, Singleton, Monostate, Builder, Prototype. <br>
 Padrões de projeto Estruturais: Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy. <br>
 Padrões de projeto Comportamentais: Chain of Responsability, Memento, Command, Iterator, Mediator, Observer, State, Strategy, Template Method. <br>
+
+## Listas
+
+### ArrayList
+
+### LinkedList
+
+### HashSet
+
+### TreeSet
+
+### LinkedHashSet
+
+### HashMap
+
+### TreeMap
+
+### LinkedHashMap
