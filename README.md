@@ -98,7 +98,7 @@ Tipos de relacionamentos Customer-Supplier Development:
 
 ## TDD
 
-
+É uma prática iterativa em que primeiro são feitos os testes unitários para depois realizar a implementação no código de produção refatorando até todas as funcionalidades sejam corretamente implementadas.
 
 ## BDD
 
