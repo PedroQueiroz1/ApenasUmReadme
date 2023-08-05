@@ -21,9 +21,10 @@ Tudo escrito na unha. :grinning:
 - [Ferramentas de pagamento](#ferramentas-de-pagamento)
 - [Tipos de atribuições de valores](#tipos-de-atribuições-de-valores)
 - [O que é a memória HEAP?](#o-que-é-a-memória-heap)
-- [WebFlux](#Webflux)
+- [WebFlux](#webflux)
 - [Padrões de projeto](#padrões-de-projeto)
-- [Listas](#Listas)
+- [Listas](#listas)
+- [Clean Architecture](#clean-architecture)
   
 ## Apache Kafka v0.4
 
@@ -221,3 +222,6 @@ Padrões de projeto Comportamentais: Chain of Responsability, Memento, Command, 
 ### TreeMap
 
 ### LinkedHashMap
+
+
+## Clean Architecture
