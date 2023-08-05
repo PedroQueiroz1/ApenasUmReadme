@@ -208,20 +208,41 @@ Padrões de projeto Comportamentais: Chain of Responsability, Memento, Command, 
 ## Listas
 
 ### ArrayList
+Utilizar quando precisar de uma lista redimensionável, onde você adiciona e remove elementos com frequência e não precisa de acesso rápido aleatório aos elementos.
 
 ### LinkedList
+Utilizar quando precisar de uma lista onde você adiciona e remove elementos frequentemente do início ou do final da lista ou quando precisa de acesso rápido a elementos próximos.
 
 ### HashSet
+Utilizar quando precisar de uma coleção que não permite duplicatas e a ordem dos elementos não é importante.
 
 ### TreeSet
+Utilizar quando precisar de uma coleção que não permite duplicatas e os elementos devem estar em ordem natural ou definida por um comparador.
 
 ### LinkedHashSet
+Utilizar quando precisar de uma coleção que não permite duplicatas e você deseja manter a ordem de inserção dos elementos.
 
 ### HashMap
+Utilizar quando precisar associar chaves a valores e a ordem das chaves não é importante. É uma boa escolha para buscar rapidamente por chaves.
 
 ### TreeMap
+Utilizar quando precisar associar chaves a valores e as chaves devem estar em ordem natural ou definida por um comparador.
 
 ### LinkedHashMap
+Utilizar quando precisar associar chaves a valores e desejar manter a ordem de inserção das chaves
+
+### Dicas:
+List: 
+
+
+Set: Interface. Não permite duplicatas.
+Map: Interface. Associa chaves a valores.
+HashSet: Classe.
+HashMap: Classe.
+
+'Tree': Elementos em ordem natural ou definida por um comparador.
+'Hash': Ordem dos elementos não é importante.
+'LinkedHash': Mantem a ordem de inserção das chaves.
 
 
 ## Clean Architecture
