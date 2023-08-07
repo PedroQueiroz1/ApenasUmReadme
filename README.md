@@ -126,23 +126,23 @@ Após a Sprint Review, ocorre o <strong>Sprint Retrospective</strong> uma reuni�
 SOLID é um acrônimo de 5 definições que são aplicadas para obter boas práticas nos projetos.
 
 <h5>Quais são as 5 definições? </h5>
-1. S -> Single Responsibility Principle (Princípio da responsabilidade única)
-2. O -> Open-Closed Principle (Princípio Aberto-Fechado)
-3. L -> Liskov Subtitution Principle (Princípio da substituição de Liskov)
-4. I -> Interface Segregation Principle (Princípio da Segregação da Interface)
-5. D -> Dependency Inversion Principle (Princípio da inversão de dependência)
+1. S -> Single Responsibility Principle (Princípio da responsabilidade única)<br>
+2. O -> Open-Closed Principle (Princípio Aberto-Fechado)<br>
+3. L -> Liskov Subtitution Principle (Princípio da substituição de Liskov)<br>
+4. I -> Interface Segregation Principle (Princípio da Segregação da Interface)<br>
+5. D -> Dependency Inversion Principle (Princípio da inversão de dependência)<br>
 
 <h5>O que são exatamente cada um desses princípios? </h5>
-1. S - Princípio da Responsabilidade Única:
-Este princípio afirma que uma classe deve ter apenas uma única responsabilidade ou motivo para mudar. Em outras palavras, uma classe deve ter apenas uma tarefa ou função bem definida. Isso torna a classe mais coesa e facilita a manutenção e evolução do código.
-2. O - Princípio Aberto-Fechado:
-Este princípio defende que uma classe deve estar aberta para extensão mas fechada para modificação. Isso significa que você pode estender o comportamento da classe adicionando novas funcionalidades sem modificar o código existente. Isso promove um código mais flexível e reutilizável.
-3. L - Princípio da Substituição de Liskov:
-Este princípio afirma que objetos de uma classe derivada devem poder ser substituídos pelos objetos da classe base sem alterar a corretude do programa. Isso Significa que uma subclasse deve ser substituível por sua classe base sem afetar o comportamento esperado do programa.
-4. I - Princípio da Segregação da Interface:
-Este princípio prega que uma classe não deve ser forçada a implementar interfaces que não utiliza. Em vez disso, é melhor ter interfaces menores e mais específicas, para que as classes possam implementar apenas o que é relevante para elas.
-5. D - Princípio da Inversão de Dependência:
-Este princípio sugere que as classes de alto nível não devem depender de classes de baixo nível diretamente, mas sim depender de abstrações. Além disso, as abstrações não devem depender de detalhes mas os detalhes devem depender das abstrações. Isso promove um desacoplamento entre as classes e facilita a manutenção e a extensão do sistema.
+1. S - Princípio da Responsabilidade Única:<br>
+Este princípio afirma que uma classe deve ter apenas uma única responsabilidade ou motivo para mudar. Em outras palavras, uma classe deve ter apenas uma tarefa ou função bem definida. Isso torna a classe mais coesa e facilita a manutenção e evolução do código.<br>
+2. O - Princípio Aberto-Fechado:<br>
+Este princípio defende que uma classe deve estar aberta para extensão mas fechada para modificação. Isso significa que você pode estender o comportamento da classe adicionando novas funcionalidades sem modificar o código existente. Isso promove um código mais flexível e reutilizável.<br>
+3. L - Princípio da Substituição de Liskov:<br>
+Este princípio afirma que objetos de uma classe derivada devem poder ser substituídos pelos objetos da classe base sem alterar a corretude do programa. Isso Significa que uma subclasse deve ser substituível por sua classe base sem afetar o comportamento esperado do programa.<br>
+4. I - Princípio da Segregação da Interface:<br>
+Este princípio prega que uma classe não deve ser forçada a implementar interfaces que não utiliza. Em vez disso, é melhor ter interfaces menores e mais específicas, para que as classes possam implementar apenas o que é relevante para elas.<br>
+5. D - Princípio da Inversão de Dependência:<br>
+Este princípio sugere que as classes de alto nível não devem depender de classes de baixo nível diretamente, mas sim depender de abstrações. Além disso, as abstrações não devem depender de detalhes mas os detalhes devem depender das abstrações. Isso promove um desacoplamento entre as classes e facilita a manutenção e a extensão do sistema.<br>
 
 
 ## Diferença entre interface e classe abstrata no Java
