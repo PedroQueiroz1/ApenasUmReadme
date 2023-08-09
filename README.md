@@ -25,6 +25,7 @@ Tudo escrito na unha. :grinning:
 - [Padrões de projeto](#padrões-de-projeto)
 - [Listas](#listas)
 - [Clean Architecture](#clean-architecture)
+- [REST x SOAP](#rest-e-soap)
   
 ## Apache Kafka v0.4
 
@@ -254,3 +255,5 @@ HashMap: Classe.
 
 
 ## Clean Architecture
+
+## Rest e Soap
