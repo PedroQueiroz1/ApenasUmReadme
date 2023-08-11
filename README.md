@@ -243,7 +243,6 @@ Utilizar quando precisar associar chaves a valores e desejar manter a ordem de i
 ### Dicas:
 List: 
 
-
 Set: Interface. Não permite duplicatas.
 Map: Interface. Associa chaves a valores.
 HashSet: Classe.
@@ -255,5 +254,11 @@ HashMap: Classe.
 
 
 ## Clean Architecture
+
+Clean Architecture, ou arquitetura limpa, é um conceito de design semelhante a arquitetura hexagonal (possui algumas diferenças). <br>
+O design dessa arquitetura é composto por várias camadas concêntricas, cada uma representando um nível de abstração e isolando diferentes tipos de responsabilidades. <br>
+Os níveis de abstrações dessa arquitetura visa a separação clara entre regras de negócio e detalhes de implementação técnica. É uma abordagem que busca manter o núcleo das regras de negócio independente de frameworks, banco de dados e outros detalhes externos, promovendo modularidade, testabilidade e evolução sustentável do software ao longo do tempo.<br>
+As camadas internas, como Entidades e Casos de Uso, concentram-se na lógica de negócios, enquanto as camadas externas, como Adaptadores de Interface e Frameworks, tratam dos aspectos técnicos e de interação com o ambiente.
+
 
 ## Rest e Soap
