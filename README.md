@@ -29,7 +29,7 @@ Tudo escrito na unha. :grinning:
 - [REST x SOAP](#rest-e-soap)
 - [Para que serve o Serializable?](#para-que-serve-o-serializable)
 - [STRATEGY: Sequence vs Identity](#strategy-sequence-vs-identity)
-- [O que são triggers?](#o-que-são-triggers)
+- [O que são triggers e procedures?](#o-que-são-triggers-e-procedures)
   
 ## Apache Kafka v0.4
 
@@ -271,4 +271,4 @@ As camadas internas, como Entidades e Casos de Uso, concentram-se na lógica de 
 
 ## STRATEGY: Sequence vs Identity
 
-## O que são triggers?
+## O que são triggers e procedures?
