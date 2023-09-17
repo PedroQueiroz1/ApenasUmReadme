@@ -30,7 +30,8 @@ Tudo escrito na unha. :grinning:
 - [Para que serve o Serializable?](#para-que-serve-o-serializable)
 - [STRATEGY: Sequence vs Identity](#strategy-sequence-vs-identity)
 - [O que são triggers e procedures?](#o-que-são-triggers-e-procedures)
-  
+- [NoSQL](#NoSQL)
+
 ## Apache Kafka v0.4
 
 ### <strong> Use Cases - Apache Kafka: </strong> <br>
@@ -272,3 +273,6 @@ As camadas internas, como Entidades e Casos de Uso, concentram-se na lógica de 
 ## STRATEGY: Sequence vs Identity
 
 ## O que são triggers e procedures?
+
+## NoSQL
+[Lista de banco de dados NoSQL](https://hostingdata.co.uk/nosql-database/)
