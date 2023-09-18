@@ -32,6 +32,7 @@ Tudo escrito na unha. :grinning:
 - [O que são triggers e procedures?](#o-que-são-triggers-e-procedures)
 - [NoSQL](#NoSQL)
 - [VO x DTO x DAO x BO x Bean](#Vo-x-DTO-x-DAO-x-BO-x-Bean)
+- [XPages](#XPages)
 
 ## Apache Kafka v0.4
 
@@ -289,9 +290,17 @@ UserDTO - id, login <br>
 Postman HTTP GET -> retorna objeto sem a senha do usuário.
 
 <strong> DAO - Data Access Object </strong> <br>
+Dados relacionados aos SQL, DAO é mais próximo do banco de dados.<br>
+Geralmente para cada classe de modelo, criar uma classe 'modeloDAO'.
 
 <strong> BO - Business Object </strong> <br>
 Pode ter tanto a camada de entidade quanto a de persistência na mesma classe, e sim, fere o SOLID.
 
 <strong> Bean - </strong> <br>
 Primeira camada que se comunica com a interface da aplicação.
+
+<strong> VO - </strong> <br>
+É um DTO só com atributos fixos. Strings ou Enums.
+Não sei se pode forçar e jogar um 'int id';
+
+## XPages
