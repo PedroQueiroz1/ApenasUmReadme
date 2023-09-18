@@ -26,11 +26,12 @@ Tudo escrito na unha. :grinning:
 - [Padrões de projeto](#padrões-de-projeto)
 - [Listas](#listas)
 - [Clean Architecture](#clean-architecture)
-- [REST x SOAP](#rest-e-soap)
+- [REST x SOAP](#rest-x-soap)
 - [Para que serve o Serializable?](#para-que-serve-o-serializable)
 - [STRATEGY: Sequence vs Identity](#strategy-sequence-vs-identity)
 - [O que são triggers e procedures?](#o-que-são-triggers-e-procedures)
 - [NoSQL](#NoSQL)
+- [VO x DTO x DAO x BO x Bean](#Vo-x-DTO-x-DAO-x-BO-x-Bean)
 
 ## Apache Kafka v0.4
 
@@ -266,7 +267,7 @@ Os níveis de abstrações dessa arquitetura visa a separação clara entre regr
 As camadas internas, como Entidades e Casos de Uso, concentram-se na lógica de negócios, enquanto as camadas externas, como Adaptadores de Interface e Frameworks, tratam dos aspectos técnicos e de interação com o ambiente.
 
 
-## Rest e Soap
+## Rest x Soap
 
 ## Para que serve o Serializable?
 
@@ -278,3 +279,19 @@ As camadas internas, como Entidades e Casos de Uso, concentram-se na lógica de 
 
 Colunas / Chave-valor / Grafos / Documentos <br>
 [Lista de banco de dados NoSQL](https://hostingdata.co.uk/nosql-database/)
+
+## VO x DTO x DAO x BO x Bean
+
+<strong> DTO - Data Transfer Object </strong> <br>
+Exemplo de DTO: <br>
+User - id, login, senha (model) </strong> <br>
+UserDTO - id, login <br>
+Postman HTTP GET -> retorna objeto sem a senha do usuário.
+
+<strong> DAO - Data Access Object </strong> <br>
+
+<strong> BO - Business Object </strong> <br>
+Pode ter tanto a camada de entidade quanto a de persistência na mesma classe, e sim, fere o SOLID.
+
+<strong> Bean - </strong> <br>
+Primeira camada que se comunica com a interface da aplicação.
