@@ -276,5 +276,5 @@ As camadas internas, como Entidades e Casos de Uso, concentram-se na lógica de 
 
 ## NoSQL
 
-Colunas / Chave-valor / Grafos / Documentos
+Colunas / Chave-valor / Grafos / Documentos <br>
 [Lista de banco de dados NoSQL](https://hostingdata.co.uk/nosql-database/)
