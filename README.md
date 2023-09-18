@@ -33,6 +33,7 @@ Tudo escrito na unha. :grinning:
 - [NoSQL](#NoSQL)
 - [VO x DTO x DAO x BO x Bean](#Vo-x-DTO-x-DAO-x-BO-x-Bean)
 - [XPages](#XPages)
+- [Algoritmos de busca e de ordenação](#Algoritmos-de-busca-e-ordenação)
 
 ## Apache Kafka v0.4
 
@@ -304,3 +305,6 @@ Primeira camada que se comunica com a interface da aplicação.
 Não sei se pode forçar e jogar um 'int id';
 
 ## XPages
+
+## Algoritmos de busca e ordenação
+
