@@ -275,4 +275,6 @@ As camadas internas, como Entidades e Casos de Uso, concentram-se na lógica de 
 ## O que são triggers e procedures?
 
 ## NoSQL
+
+Colunas / Chave-valor / Grafos / Documentos
 [Lista de banco de dados NoSQL](https://hostingdata.co.uk/nosql-database/)
