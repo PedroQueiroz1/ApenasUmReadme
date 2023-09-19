@@ -35,6 +35,8 @@ Tudo escrito na unha. :grinning:
 - [XPages](#XPages)
 - [Algoritmos de busca e de ordenação](#Algoritmos-de-busca-e-ordenação)
 - [Design Patterns](#Design-Patterns)
+- [Banco de imagens](#Banco-de-imagens)
+- [Paleta de cores](#Paleta-de-cores)
 
 ## Apache Kafka v0.4
 
@@ -306,7 +308,18 @@ Primeira camada que se comunica com a interface da aplicação.
 Não sei se pode forçar e jogar um 'int id';
 
 ## Design Patterns
+
 ## XPages
 
 ## Algoritmos de busca e ordenação
 
+## Banco de imagens
+[Giphy](https://giphy.com/) <br>
+[Pexels](https://www.pexels.com/pt-br/) <br>
+[Flaticon](https://www.flaticon.com/br/) <br>
+[Freepik](https://br.freepik.com/) <br>
+[Noun Project](https://thenounproject.com/) <br>
+[Brasil com S](https://www.brasilcoms.com.br/) <br>
+
+## Paleta de cores
+[Adobe Color](https://color.adobe.com/pt/)
