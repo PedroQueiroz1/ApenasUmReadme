@@ -9,35 +9,35 @@ Todos os tópicos serão atualizados frequentemente conforme vou estudando mais 
 Tudo escrito na unha. :grinning:
 
 ### Tópicos 
-<ol>
-- [Apache Kafka](#apache-kafka-v04)
-- [DDD](#ddd-v02)
-- [TDD](#tdd)
-- [BDD](#bdd)
-- [Scrum](#scrum)
-- [SOLID](#solid-v01)
-- [Diferença entre interface e classe abstrata no Java](#diferença-entre-interface-e-classe-abstrata-no-java)
-- [Arquitetura Hexagonal](#arquitetura-hexagonal)
-- [Spring Security](#spring-security)
-- [Ferramentas de pagamento](#ferramentas-de-pagamento)
-- [Tipos de atribuições de valores](#tipos-de-atribuições-de-valores)
-- [O que é a memória HEAP?](#o-que-é-a-memória-heap)
-- [WebFlux](#webflux)
-- [Padrões de projeto](#padrões-de-projeto)
-- [Listas](#listas)
-- [Clean Architecture](#clean-architecture)
-- [REST x SOAP](#rest-x-soap)
-- [Para que serve o Serializable?](#para-que-serve-o-serializable)
-- [STRATEGY: Sequence vs Identity](#strategy-sequence-vs-identity)
-- [O que são triggers e procedures?](#o-que-são-triggers-e-procedures)
-- [NoSQL](#NoSQL)
-- [VO x DTO x DAO x BO x Bean](#Vo-x-DTO-x-DAO-x-BO-x-Bean)
-- [XPages](#XPages)
 - [Algoritmos de busca e de ordenação](#Algoritmos-de-busca-e-ordenação)
-- [Design Patterns](#Design-Patterns)
+- [Apache Kafka](#apache-kafka-v04)
+- [Arquitetura Hexagonal](#arquitetura-hexagonal)
 - [Banco de imagens](#Banco-de-imagens)
+- [BDD](#bdd)
+- [Clean Architecture](#clean-architecture)
+- [DDD](#ddd-v02)
+- [Design Patterns](#Design-Patterns)
+- [Diferença entre interface e classe abstrata no Java](#diferença-entre-interface-e-classe-abstrata-no-java)
+- [Ferramentas de pagamento](#ferramentas-de-pagamento)
+- [NoSQL](#NoSQL)
+- [O que é a memória HEAP?](#o-que-é-a-memória-heap)
+- [O que são triggers e procedures?](#o-que-são-triggers-e-procedures)
+- [Padrões de projeto](#padrões-de-projeto)
 - [Paleta de cores](#Paleta-de-cores)
-</ol>
+- [Para que serve o Serializable?](#para-que-serve-o-serializable)
+- [REST x SOAP](#rest-x-soap)
+- [SOLID](#solid-v01)
+- [Scrum](#scrum)
+- [Spring Security](#spring-security)
+- [STRATEGY: Sequence vs Identity](#strategy-sequence-vs-identity)
+- [TDD](#tdd)
+- [Tipos de atribuições de valores](#tipos-de-atribuições-de-valores)
+- [VO x DTO x DAO x BO x Bean](#Vo-x-DTO-x-DAO-x-BO-x-Bean)
+- [WebFlux](#webflux)
+- [XPages](#XPages)
+
+## Algoritmos de busca e ordenação
+
 ## Apache Kafka v0.4
 
 ### <strong> Use Cases - Apache Kafka: </strong> <br>
@@ -311,7 +311,6 @@ Não sei se pode forçar e jogar um 'int id';
 
 ## XPages
 
-## Algoritmos de busca e ordenação
 
 ## Banco de imagens
 [Giphy](https://giphy.com/) <br>
