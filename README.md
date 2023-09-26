@@ -9,7 +9,7 @@ Todos os tópicos serão atualizados frequentemente conforme vou estudando mais 
 Tudo escrito na unha. :grinning:
 
 ### Tópicos 
-
+<ol>
 - [Apache Kafka](#apache-kafka-v04)
 - [DDD](#ddd-v02)
 - [TDD](#tdd)
@@ -37,7 +37,7 @@ Tudo escrito na unha. :grinning:
 - [Design Patterns](#Design-Patterns)
 - [Banco de imagens](#Banco-de-imagens)
 - [Paleta de cores](#Paleta-de-cores)
-
+</ol>
 ## Apache Kafka v0.4
 
 ### <strong> Use Cases - Apache Kafka: </strong> <br>
