@@ -294,7 +294,8 @@ Postman HTTP GET -> retorna objeto sem a senha do usuário.
 
 <strong> DAO - Data Access Object </strong> <br>
 Dados relacionados aos SQL, DAO é mais próximo do banco de dados.<br>
-Geralmente para cada classe de modelo, criar uma classe 'modeloDAO'.
+Geralmente para cada classe de modelo, criar uma classe 'modeloDAO'.<br>
+O DAO é a união de uma entidade com um conector. É uma classe capaz de encapsular as propriedades de uma entidade da mesma forma que possui métodos para persistir ou capturar aquelas informações do banco.
 
 <strong> BO - Business Object </strong> <br>
 Pode ter tanto a camada de entidade quanto a de persistência na mesma classe, e sim, fere o SOLID.
