@@ -28,6 +28,7 @@ Tudo escrito na unha. :grinning:
 - [REST x SOAP](#rest-x-soap)
 - [SOLID](#solid-v01)
 - [Scrum](#scrum)
+- [Serializable](#serializable)
 - [Spring Security](#spring-security)
 - [STRATEGY: Sequence vs Identity](#strategy-sequence-vs-identity)
 - [TDD](#tdd)
@@ -66,6 +67,7 @@ Event sourcing é um estilo de design de aplicativo no qual as alterações de e
 7 - <strong> Commit Log: </strong> <br>
 O Kafka pode servir como um tipo de log de confirmação externo para um sistema distribuído. O log ajuda a replicar dados entre nós e atua como um mecanismo de ressincronização para nós com falha restaurarem seus dados. O recurso de compactação de log no Kafka ajuda a suportar esse uso. Nesse caso, o Kafka é semelhante ao projeto Apache BookKeeper.<br>
 
+## BDD
 
 ## DDD v0.2
   <small><em>"Se os programadores não estão interessados no domínio, eles aprendem apenas o que a aplicação deve fazer, não os princípios por trás dela."<br> - Eric Evans</em></small>
@@ -107,15 +109,11 @@ Tipos de relacionamentos Customer-Supplier Development:
 2. Partner: nesse relacionamento os bounded contexts parceiros, unidos por uma dependência mutua e deverão trabalhar em conjunto.
 3. Anticorruption Layer: ja nesse relacionamento a equipe downstream cria uma camada para proteger o seu contexto das modificações do upstream (comum em sistemas legados).
 
-
+## Design Patterns
 
 ## TDD
 
 É uma prática iterativa em que primeiro são feitos os testes unitários para depois realizar a implementação no código de produção refatorando até todas as funcionalidades sejam corretamente implementadas.
-
-## BDD
-
-
 
 ## Scrum
 
@@ -131,6 +129,9 @@ Ao longo da sprint é comum que a equipe realize reuniões dirárias que são ch
 Ao final da Sprint ocorre o processo que é chamado de <strong>Sprint Review</strong> onde é feita a demonstração do incremento do produto à equipe de <strong>Stakeholders</strong> e recebe feedback.<br>
 Após a Sprint Review, ocorre o <strong>Sprint Retrospective</strong> uma reunião em que a equipe reflete sobre o processo de trabalho da sprint anterior e indetifica oportunidades de melhoria para a próxima sprint.<br>
 
+## Serializable
+O implements Serializable é necessário pois existem frameworks de banco de dados que não realizam a serialização automática do objeto, tornando-se necessário utilizar o implements serializable. <br>
+Serialização nada mais é que a transformação de um objeto em uma cadeia de bytes para ser manipulado mais facilmente, seja através de transporte pela rede ou salvo pelo disco.
 
 ## SOLID v0.1
 
@@ -210,8 +211,6 @@ No Java, a memória heap é usada para alocar objetos e é gerenciada automatica
 Já a memória stack é usada para armazenar variáveis locais e referências a objetos.
 
 
-
-## Webflux
 
 ## Padrões de projeto
  <small><em>"Cada padrão descreve um problema que ocorre frequentemente em seu ambiente, e então descreve o cerne da solução para aquele problema, de um modo tal que você pode usar esta solução milhões de vezes, sem nunca fazer a mesma coisa repetida."<br> - Christopher Alexander</em></small> <br><br>
@@ -307,7 +306,7 @@ Primeira camada que se comunica com a interface da aplicação.
 É um DTO só com atributos fixos. Strings ou Enums.
 Não sei se pode forçar e jogar um 'int id';
 
-## Design Patterns
+## Webflux
 
 ## XPages
 
