@@ -24,7 +24,6 @@ Tudo escrito na unha. :grinning:
 - [O que são triggers e procedures?](#o-que-são-triggers-e-procedures)
 - [Padrões de projeto](#padrões-de-projeto)
 - [Paleta de cores](#Paleta-de-cores)
-- [Para que serve o Serializable?](#para-que-serve-o-serializable)
 - [REST x SOAP](#rest-x-soap)
 - [SOLID](#solid-v01)
 - [Scrum](#scrum)
@@ -272,8 +271,6 @@ As camadas internas, como Entidades e Casos de Uso, concentram-se na lógica de 
 
 
 ## Rest x Soap
-
-## Para que serve o Serializable?
 
 ## STRATEGY: Sequence vs Identity
 
