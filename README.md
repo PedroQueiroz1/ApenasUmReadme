@@ -1,5 +1,7 @@
 # Apenas Um Readme
 
+<img width="30" src="https://emojis.slackmojis.com/emojis/images/1643517522/35539/hammer_computer.gif?1643517522" alt="hammer computer" />  <img width="30" src="https://emojis.slackmojis.com/emojis/images/1643515307/13263/bongocat_code.gif?1643515307" alt="bongocat code" />  <img width="30" src="https://emojis.slackmojis.com/emojis/images/1643514738/7421/typingcat.gif?1643514738" alt="typing cat" /> 
+
 ### Bem-vindo, ao meu Readme de estudos!
 
 Esse é um Readme que decidi fazer para estudos, para conseguir massificar as informações que tenho estudado ultimamente e lapidar alguns conceitos que já conhecia.<br>
