@@ -23,9 +23,9 @@ Tudo escrito na unha. :grinning:
 - [Ferramentas de pagamento](#ferramentas-de-pagamento)
 - [NoSQL](#NoSQL)
 - [O que é a memória HEAP?](#o-que-é-a-memória-heap)
-- [O que são triggers e procedures?](#o-que-são-triggers-e-procedures)
 - [Padrões de projeto](#padrões-de-projeto)
 - [Paleta de cores](#Paleta-de-cores)
+- [Pipeline](#Pipeline)
 - [REST x SOAP](#rest-x-soap)
 - [SOLID](#solid-v01)
 - [Scrum](#scrum)
@@ -34,6 +34,7 @@ Tudo escrito na unha. :grinning:
 - [STRATEGY: Sequence vs Identity](#strategy-sequence-vs-identity)
 - [TDD](#tdd)
 - [Tipos de atribuições de valores](#tipos-de-atribuições-de-valores)
+- [Triggers e procedures?](#triggers-e-procedures)
 - [VO x DTO x DAO x BO x Bean](#Vo-x-DTO-x-DAO-x-BO-x-Bean)
 - [WebFlux](#webflux)
 - [XPages](#XPages)
@@ -112,52 +113,48 @@ Tipos de relacionamentos Customer-Supplier Development:
 
 ## Design Patterns
 
-## TDD
+## Listas
 
-É uma prática iterativa em que primeiro são feitos os testes unitários para depois realizar a implementação no código de produção refatorando até todas as funcionalidades sejam corretamente implementadas.
+### ArrayList
+Utilizar quando precisar de uma lista redimensionável, onde você adiciona e remove elementos com frequência e não precisa de acesso rápido aleatório aos elementos.
 
-## Scrum
+### LinkedList
+Utilizar quando precisar de uma lista onde você adiciona e remove elementos frequentemente do início ou do final da lista ou quando precisa de acesso rápido a elementos próximos.
 
-### Backlog do Produto
-É uma lista contendo tudo o que deseja que seja contemplado pelo projeto para chegar em um produto. Contém os requisitos do sistema.<br>
-<strong>História do Usuário/User story</strong><br>
-É cada requisito registrado no Backlog do Produto.<br>
-### Sprint
-É cada interação que ocorre com períodos fixos para ser trabalhado no desenvolvimento de um produto entregável. Geralmente tem duração de 2 a 4 semanas. <br>
-Durante a sprint é retalizado uma lista de requisitos(retirados do backlog do produto) a serem trabalhados que foram previamente acordados e essa lista é chamada de <strong>Sprint Backlog</strong>
-que é definida no início de cada sprint durante o evento que é chamado de <strong>Spring Planning</strong>(planejamento da sprint).<br>
-Ao longo da sprint é comum que a equipe realize reuniões dirárias que são chamadas de <strong>Daily Scrum</strong> ou <strong>Daily Stand-up</strong> onde é discutido o processo, o que foi concluído desde a última reunião e quaisquer impedimentos que estejam afetando o trabalho.<br>
-Ao final da Sprint ocorre o processo que é chamado de <strong>Sprint Review</strong> onde é feita a demonstração do incremento do produto à equipe de <strong>Stakeholders</strong> e recebe feedback.<br>
-Após a Sprint Review, ocorre o <strong>Sprint Retrospective</strong> uma reunião em que a equipe reflete sobre o processo de trabalho da sprint anterior e indetifica oportunidades de melhoria para a próxima sprint.<br>
+### HashSet
+Utilizar quando precisar de uma coleção que não permite duplicatas e a ordem dos elementos não é importante.
 
-## Serializable
-O implements Serializable é necessário pois existem frameworks de banco de dados que não realizam a serialização automática do objeto, tornando-se necessário utilizar o implements serializable. <br>
-Serialização nada mais é que a transformação de um objeto em uma cadeia de bytes para ser manipulado mais facilmente, seja através de transporte pela rede ou salvo pelo disco.
+### TreeSet
+Utilizar quando precisar de uma coleção que não permite duplicatas e os elementos devem estar em ordem natural ou definida por um comparador.
 
-## SOLID v0.1
+### LinkedHashSet
+Utilizar quando precisar de uma coleção que não permite duplicatas e você deseja manter a ordem de inserção dos elementos.
 
-<h5>O que é SOLID? </h5>
-SOLID é um acrônimo de 5 definições que são aplicadas para obter boas práticas nos projetos.
+### HashMap
+Utilizar quando precisar associar chaves a valores e a ordem das chaves não é importante. É uma boa escolha para buscar rapidamente por chaves.
 
-<h5>Quais são as 5 definições? </h5>
-1. <strong>S</strong> -> Single Responsibility Principle (Princípio da responsabilidade única)<br>
-2. <strong>O</strong> -> Open-Closed Principle (Princípio Aberto-Fechado)<br>
-3. <strong>L</strong> -> Liskov Subtitution Principle (Princípio da substituição de Liskov)<br>
-4. <strong>I</strong> -> Interface Segregation Principle (Princípio da Segregação da Interface)<br>
-5. <strong>D</strong> -> Dependency Inversion Principle (Princípio da inversão de dependência)<br>
+### TreeMap
+Utilizar quando precisar associar chaves a valores e as chaves devem estar em ordem natural ou definida por um comparador.
 
-<h5>O que são exatamente cada um desses princípios? </h5>
-1. <strong>S - Princípio da Responsabilidade Única:</strong><br>
-Este princípio afirma que uma classe deve ter apenas uma única responsabilidade ou motivo para mudar. Em outras palavras, uma classe deve ter apenas uma tarefa ou função bem definida. Isso torna a classe mais coesa e facilita a manutenção e evolução do código.<br>
-2. <strong>O - Princípio Aberto-Fechado:</strong><br>
-Este princípio defende que uma classe deve estar aberta para extensão mas fechada para modificação. Isso significa que você pode estender o comportamento da classe adicionando novas funcionalidades sem modificar o código existente. Isso promove um código mais flexível e reutilizável.<br>
-3. <strong>L - Princípio da Substituição de Liskov:</strong><br>
-Este princípio afirma que objetos de uma classe derivada devem poder ser substituídos pelos objetos da classe base sem alterar a corretude do programa. Isso Significa que uma subclasse deve ser substituível por sua classe base sem afetar o comportamento esperado do programa.<br>
-4. <strong>I - Princípio da Segregação da Interface:</strong><br>
-Este princípio prega que uma classe não deve ser forçada a implementar interfaces que não utiliza. Em vez disso, é melhor ter interfaces menores e mais específicas, para que as classes possam implementar apenas o que é relevante para elas.<br>
-5. <strong>D - Princípio da Inversão de Dependência:</strong><br>
-Este princípio sugere que as classes de alto nível não devem depender de classes de baixo nível diretamente, mas sim depender de abstrações. Além disso, as abstrações não devem depender de detalhes mas os detalhes devem depender das abstrações. Isso promove um desacoplamento entre as classes e facilita a manutenção e a extensão do sistema.<br>
+### LinkedHashMap
+Utilizar quando precisar associar chaves a valores e desejar manter a ordem de inserção das chaves
 
+### Dicas:
+List: 
+
+Set: Interface. Não permite duplicatas.
+Map: Interface. Associa chaves a valores.
+HashSet: Classe.
+HashMap: Classe.
+
+'Tree': Elementos em ordem natural ou definida por um comparador.
+'Hash': Ordem dos elementos não é importante.
+'LinkedHash': Mantem a ordem de inserção das chaves.
+
+## NoSQL
+
+Colunas / Chave-valor / Grafos / Documentos <br>
+[Lista de banco de dados NoSQL](https://hostingdata.co.uk/nosql-database/)
 
 ## Diferença entre interface e classe abstrata no Java
 
@@ -178,7 +175,7 @@ Classes Abstratas:
 - Pode ser instanciada.
 - Necessária quando é pra fornecer uam implementação padrão para um conjunto de classes relacionadas e que também deseja permitir que essas classes personalizem partes específicas do comportamento.
 
-
+## Pipeline
 
 ## Arquitetura Hexagonal
 
@@ -225,43 +222,7 @@ Padrões de projeto Criacionais: Factory Method, Abstract Factory, Singleton, Mo
 Padrões de projeto Estruturais: Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy. <br>
 Padrões de projeto Comportamentais: Chain of Responsability, Memento, Command, Iterator, Mediator, Observer, State, Strategy, Template Method. <br>
 
-## Listas
 
-### ArrayList
-Utilizar quando precisar de uma lista redimensionável, onde você adiciona e remove elementos com frequência e não precisa de acesso rápido aleatório aos elementos.
-
-### LinkedList
-Utilizar quando precisar de uma lista onde você adiciona e remove elementos frequentemente do início ou do final da lista ou quando precisa de acesso rápido a elementos próximos.
-
-### HashSet
-Utilizar quando precisar de uma coleção que não permite duplicatas e a ordem dos elementos não é importante.
-
-### TreeSet
-Utilizar quando precisar de uma coleção que não permite duplicatas e os elementos devem estar em ordem natural ou definida por um comparador.
-
-### LinkedHashSet
-Utilizar quando precisar de uma coleção que não permite duplicatas e você deseja manter a ordem de inserção dos elementos.
-
-### HashMap
-Utilizar quando precisar associar chaves a valores e a ordem das chaves não é importante. É uma boa escolha para buscar rapidamente por chaves.
-
-### TreeMap
-Utilizar quando precisar associar chaves a valores e as chaves devem estar em ordem natural ou definida por um comparador.
-
-### LinkedHashMap
-Utilizar quando precisar associar chaves a valores e desejar manter a ordem de inserção das chaves
-
-### Dicas:
-List: 
-
-Set: Interface. Não permite duplicatas.
-Map: Interface. Associa chaves a valores.
-HashSet: Classe.
-HashMap: Classe.
-
-'Tree': Elementos em ordem natural ou definida por um comparador.
-'Hash': Ordem dos elementos não é importante.
-'LinkedHash': Mantem a ordem de inserção das chaves.
 
 
 ## Clean Architecture
@@ -274,14 +235,55 @@ As camadas internas, como Entidades e Casos de Uso, concentram-se na lógica de 
 
 ## Rest x Soap
 
+## Scrum
+
+### Backlog do Produto
+É uma lista contendo tudo o que deseja que seja contemplado pelo projeto para chegar em um produto. Contém os requisitos do sistema.<br>
+<strong>História do Usuário/User story</strong><br>
+É cada requisito registrado no Backlog do Produto.<br>
+### Sprint
+É cada interação que ocorre com períodos fixos para ser trabalhado no desenvolvimento de um produto entregável. Geralmente tem duração de 2 a 4 semanas. <br>
+Durante a sprint é retalizado uma lista de requisitos(retirados do backlog do produto) a serem trabalhados que foram previamente acordados e essa lista é chamada de <strong>Sprint Backlog</strong>
+que é definida no início de cada sprint durante o evento que é chamado de <strong>Spring Planning</strong>(planejamento da sprint).<br>
+Ao longo da sprint é comum que a equipe realize reuniões dirárias que são chamadas de <strong>Daily Scrum</strong> ou <strong>Daily Stand-up</strong> onde é discutido o processo, o que foi concluído desde a última reunião e quaisquer impedimentos que estejam afetando o trabalho.<br>
+Ao final da Sprint ocorre o processo que é chamado de <strong>Sprint Review</strong> onde é feita a demonstração do incremento do produto à equipe de <strong>Stakeholders</strong> e recebe feedback.<br>
+Após a Sprint Review, ocorre o <strong>Sprint Retrospective</strong> uma reunião em que a equipe reflete sobre o processo de trabalho da sprint anterior e indetifica oportunidades de melhoria para a próxima sprint.<br>
+
+## Serializable
+O implements Serializable é necessário pois existem frameworks de banco de dados que não realizam a serialização automática do objeto, tornando-se necessário utilizar o implements serializable. <br>
+Serialização nada mais é que a transformação de um objeto em uma cadeia de bytes para ser manipulado mais facilmente, seja através de transporte pela rede ou salvo pelo disco.
+
+## SOLID v0.1
+
+<h5>O que é SOLID? </h5>
+SOLID é um acrônimo de 5 definições que são aplicadas para obter boas práticas nos projetos.
+
+<h5>Quais são as 5 definições? </h5>
+1. <strong>S</strong> -> Single Responsibility Principle (Princípio da responsabilidade única)<br>
+2. <strong>O</strong> -> Open-Closed Principle (Princípio Aberto-Fechado)<br>
+3. <strong>L</strong> -> Liskov Subtitution Principle (Princípio da substituição de Liskov)<br>
+4. <strong>I</strong> -> Interface Segregation Principle (Princípio da Segregação da Interface)<br>
+5. <strong>D</strong> -> Dependency Inversion Principle (Princípio da inversão de dependência)<br>
+
+<h5>O que são exatamente cada um desses princípios? </h5>
+1. <strong>S - Princípio da Responsabilidade Única:</strong><br>
+Este princípio afirma que uma classe deve ter apenas uma única responsabilidade ou motivo para mudar. Em outras palavras, uma classe deve ter apenas uma tarefa ou função bem definida. Isso torna a classe mais coesa e facilita a manutenção e evolução do código.<br>
+2. <strong>O - Princípio Aberto-Fechado:</strong><br>
+Este princípio defende que uma classe deve estar aberta para extensão mas fechada para modificação. Isso significa que você pode estender o comportamento da classe adicionando novas funcionalidades sem modificar o código existente. Isso promove um código mais flexível e reutilizável.<br>
+3. <strong>L - Princípio da Substituição de Liskov:</strong><br>
+Este princípio afirma que objetos de uma classe derivada devem poder ser substituídos pelos objetos da classe base sem alterar a corretude do programa. Isso Significa que uma subclasse deve ser substituível por sua classe base sem afetar o comportamento esperado do programa.<br>
+4. <strong>I - Princípio da Segregação da Interface:</strong><br>
+Este princípio prega que uma classe não deve ser forçada a implementar interfaces que não utiliza. Em vez disso, é melhor ter interfaces menores e mais específicas, para que as classes possam implementar apenas o que é relevante para elas.<br>
+5. <strong>D - Princípio da Inversão de Dependência:</strong><br>
+Este princípio sugere que as classes de alto nível não devem depender de classes de baixo nível diretamente, mas sim depender de abstrações. Além disso, as abstrações não devem depender de detalhes mas os detalhes devem depender das abstrações. Isso promove um desacoplamento entre as classes e facilita a manutenção e a extensão do sistema.<br>
+
 ## STRATEGY: Sequence vs Identity
 
 ## O que são triggers e procedures?
 
-## NoSQL
+## TDD
 
-Colunas / Chave-valor / Grafos / Documentos <br>
-[Lista de banco de dados NoSQL](https://hostingdata.co.uk/nosql-database/)
+É uma prática iterativa em que primeiro são feitos os testes unitários para depois realizar a implementação no código de produção refatorando até todas as funcionalidades sejam corretamente implementadas.
 
 ## VO x DTO x DAO x BO x Bean
 
