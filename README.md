@@ -311,7 +311,7 @@ Não sei se pode forçar e jogar um 'int id';
 ## Webflux
 
 ## XPages
-
+Utilizado exclusivamente no Domino.
 
 ## Banco de imagens
 [Giphy](https://giphy.com/) <br>
